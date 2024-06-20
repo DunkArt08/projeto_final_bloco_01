@@ -6,7 +6,10 @@ import java.util.*;
 public class Menu {
 
 	public static void main(String[] args) {
-		int opcao;
+		int opcao,quantidade,id;;
+		String nome,nomeEmpresa,personalizacaoBrinde,diaMaximoDeEntrega,nomeEvento;
+		float preco, peso;
+		
 		
 		Scanner leia = new Scanner(System.in);
 
