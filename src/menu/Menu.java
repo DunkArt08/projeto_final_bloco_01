@@ -17,11 +17,11 @@ public class Menu {
 			System.out.println("                                                                                      ");
 			System.out.println("**************************************************************************************");
 			System.out.println("                        1 - Mostrar brindes disponiveis                               ");
-			System.out.println("                        2 - Adicionar brinde ao carrinho                              ");
-			System.out.println("                        3 - Mostrar seu carrinho                                      ");
-			System.out.println("                        4 - Remover brinde do carrinho                                ");
-			System.out.println("                        5 - Finalizar Compra                                          ");
-			System.out.println("                        6 - Modificar produto no carrinho                             ");
+			System.out.println("                        2 - Adicionar brinde ao estoque                               ");
+			System.out.println("                        3 - Mostrar seu estoque                                       ");
+			System.out.println("                        4 - Remover brinde do estoque                                 ");
+			System.out.println("                        5 - Finalizar Operação                                        ");
+			System.out.println("                        6 - Modificar brinde no estoque                               ");
 			System.out.println("                        7 - Sair do APP                                               ");
 			System.out.println("                                                                                      ");
 			System.out.println("**************************************************************************************");
@@ -46,35 +46,35 @@ public class Menu {
 			
 			switch (opcao) {
 			case 1:
-				System.out.println("\nBrindes Disponiveis em nossa loja: ");
+				System.out.println("\nBrindes Disponiveis em nosso estoque: ");
 				
 				keyPress();
 				break;
 			case 2:
-				System.out.println("\nAdicionar brinde ao carrinho");
-				System.out.println("\nDigite o Id do brinde que deseja adicionar: ");
+				System.out.println("\nAdicionar brinde ao estoque");
+				System.out.println("\nDigite o nome do Brinde: ");
 				
 				keyPress();
 				break;
 			case 3:
-				System.out.println("\nSeu carrinho:");
+				System.out.println("\nSeu estoque:");
 				
 				keyPress();
 				break;
 			case 4:
-				System.out.println("\nRemover brinde do carrinho");
+				System.out.println("\nRemover brinde do estoque");
 				System.out.println("\nDigite o Id do brinde que deseja remover: ");
 				
 				keyPress();
 				break;
 			case 5:
-				System.out.println("Deseja mesmo finalizar sua compra (S/N) ?: ");
+				System.out.println("Deseja mesmo finalizar sua operação (S/N) ?: ");
 				
 				
 				keyPress();
 				break;
 			case 6:
-				System.out.println("Modificar brinde no carrinho: ");
+				System.out.println("Modificar brinde no estoque: ");
 				System.out.println("Digite o ID do brinde que deseja modificar: ");
 				
 				keyPress();
