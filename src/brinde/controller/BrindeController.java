@@ -3,6 +3,7 @@ package brinde.controller;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import brinde.model.Brinde;
 import brinde.repository.brindeRepository;
@@ -16,7 +17,8 @@ public class BrindeController implements brindeRepository {
 	public void adicionarProdutoNoEstoque(Brinde brinde) {
 		listaBrindes.add(brinde);
 		System.out.println(brinde.getNome() + " foi adicionados em nosso galpão");
-		
+		System.out.println("\nO valor total de seus itens é de: R$" + somasProdutos(brinde.getPreco(),brinde.getQuantidade()));
+		System.out.println("\nO Peso total de seu pacote é de: " + somaPeso(brinde.getPeso(), brinde.getQuantidade()) + " Kg");
 	}
 	
 	public void procurarPorNome(String nome) {
@@ -72,5 +74,18 @@ public class BrindeController implements brindeRepository {
 		}
 		return null;
 	}
+
+	@Override
+	public float somasProdutos(float valorUnitario, int quantidadeTotal) {
+		return valorUnitario *= quantidadeTotal;
+	}
+
+	@Override
+	public float somaPeso(float peso, int quantidadeTotal) {
+		// TODO Auto-generated method stub
+		return peso *= quantidadeTotal;
+	}
+	
+	
 
 }

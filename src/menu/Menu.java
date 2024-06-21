@@ -180,7 +180,7 @@ public class Menu {
 							leia.skip("\\R?");
 							serFragil = leia.nextLine();
 							do {
-							System.out.println("Em uma escala de 0 a 10 qual frágil ele possui?: ");
+							System.out.println("Em uma escala de 0 a 10 quão frágil ele é?: ");
 							leia.skip("\\R?");
 							grauFragilidade = leia.nextInt();
 							}while(grauFragilidade < 0 && grauFragilidade > 10);

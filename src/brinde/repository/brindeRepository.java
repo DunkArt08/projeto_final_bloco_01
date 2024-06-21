@@ -9,5 +9,7 @@ public interface brindeRepository {
 	public void removerProdutoNoEstoque(String nome);
 	public void mostrarEstoque();
 	public void atualizarProduto(Brinde brinde);
+	public float somasProdutos(float valorUnitario, int quantidadeTotal);
+	public float somaPeso(float peso, int quantidadeTotal);
 	
 }
